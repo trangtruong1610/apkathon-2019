@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.4.js"></script>
+</head>
+<body>
+    <button id="abb" style="padding: 15px">abb</button>
+
+    <div id="khoa">Khoa+Tuan show off</div>
+
+    <script>
+        $('#abb').click(function() {
+            $.ajax({
+                url: "http://localhost:8000/hi",
+                success: function(r){
+                    $('#khoa').html('<b>Heheheheheh</b>');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
